@@ -59,7 +59,7 @@ class App extends Component {
   loginHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch("http://localhost:8080/auth/login", {
+    fetch("https://apime/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ class App extends Component {
         }
       `,
     };
-    fetch("http://localhost:8080/graphql", {
+    fetch("https://apime/graphql", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
